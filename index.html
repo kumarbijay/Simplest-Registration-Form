@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="validate.js"></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <h3>Let's get you registered on this website.</h3>
+    <hr/>
+    <fieldset> <legend>Registration form</legend>
+    <form action="register.php" name="reg" onsubmit="return valuser()" method="post">
+        <caption>First Name:</caption><br/>
+        <input name="first" type="text" /><br />
+        <caption>Last Name:</caption><br/>
+        <input name="last" type="text" /><br/>
+        <caption>E-mail:</caption><br/>
+        <input name="email" type="email" /><br/>
+        <caption>Gender:</caption><br/>
+        <input type="radio" id="male" value="Male" name="gender"> <label for="male">Male</label>
+        <input type="radio" id="female" value="Female" name="gender"><label for="female">Female</label> <br/>
+        <caption> Date of Birth:</caption><br/>
+        <input name="date" type="date"><br/>
+        <caption>User name:</caption><br/>
+        <input name="username" type="text"><br/>
+        <caption>Password</caption><br/>
+        <input name="password_1" type="password" /><br/>
+        <caption>Confirm Password</caption><br/>
+        <input name="password_2" type="password" /><br/>
+        <input name="check" type="checkbox" />I agree to TOS & Privacy Policy.</input><br/>
+        <input name="reg_user" type="submit" />
+    </form> 
+</fieldset> 
+</body>
+</html>
